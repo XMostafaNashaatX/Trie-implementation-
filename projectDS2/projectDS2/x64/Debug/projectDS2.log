@@ -1,0 +1,5 @@
+﻿  projectDS2.cpp
+C:\Users\Mostafa\source\repos\projectDS2\projectDS2\projectDS2.cpp(130,27): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Mostafa\source\repos\projectDS2\projectDS2\projectDS2.cpp(131,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Mostafa\source\repos\projectDS2\projectDS2\projectDS2.cpp(171): warning C4715: 'Trie::fuzzySearch': not all control paths return a value
+  projectDS2.vcxproj -> C:\Users\Mostafa\source\repos\projectDS2\x64\Debug\projectDS2.exe

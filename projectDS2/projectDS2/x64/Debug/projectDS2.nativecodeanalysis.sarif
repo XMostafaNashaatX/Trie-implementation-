@@ -1,0 +1,146 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'Node::links' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Mostafa/source/repos/projectDS2/projectDS2/projectDS2.cpp"
+                },
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 1
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Node::{ctor}",
+                  "decoratedName": "??0Node@@QEAA@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "Node::links"
+          }
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'_Param_(1)' could be '0':  this does not adhere to the specification for the function 'std::basic_string<char,std::char_traits<char>,std::allocator<char> >::{ctor}'. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Mostafa/source/repos/projectDS2/projectDS2/projectDS2.cpp"
+                },
+                "region": {
+                  "startLine": 154,
+                  "startColumn": 13,
+                  "endLine": 154,
+                  "endColumn": 20
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Trie::fuzzySearch",
+                  "decoratedName": "?fuzzySearch@Trie@@QEAA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V23@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Mostafa/source/repos/projectDS2/projectDS2/projectDS2.cpp"
+                          },
+                          "region": {
+                            "startLine": 152,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Mostafa/source/repos/projectDS2/projectDS2/projectDS2.cpp"
+                          },
+                          "region": {
+                            "startLine": 153,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/Mostafa/source/repos/projectDS2/projectDS2/projectDS2.cpp"
+                          },
+                          "region": {
+                            "startLine": 154,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.38.33133.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/Mostafa/source/repos/projectDS2/projectDS2/projectDS2.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "d6f4e3ccd75b3a28834f7ea2c3f1a7e936960e289b12d9ab8a7eccf1da6cbf66"
+          }
+        }
+      ]
+    }
+  ]
+}
